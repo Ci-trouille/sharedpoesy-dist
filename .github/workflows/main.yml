@@ -6,7 +6,7 @@ on:
   push: 
     branches: [ main ] 
  
-# A workflow run is made ghjkgjkjb up of one or more jobs that can run sequentially or in parallel 
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel 
 jobs: 
   # This workflow contains a single job called "build" 
   build: 
@@ -23,6 +23,6 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }} 
         port: 22 
         script: | 
-          cd /var/www/sharedpoesy-dist/ 
-          git pull origin main 
-          git status
+      cd /var/pocketbase/pb_public 
+      git pull origin main 
+      git status 
